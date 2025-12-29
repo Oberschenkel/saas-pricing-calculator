@@ -73,6 +73,10 @@ input[type=range] {
     -webkit-appearance: none;
     width: 100%;
     background: transparent;
+    cursor: pointer;       /* Zeigt die Hand an */
+    position: relative;    /* Nötig für z-index */
+    z-index: 10;           /* Holt den Slider ganz nach vorne über alle Schatten */
+    touch-action: none;    /* Verhindert Scrollen auf Handy während man schiebt */
 }
 
 input[type=range]::-webkit-slider-runnable-track {
