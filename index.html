@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Pricing Configurator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="card">
+        <div class="header">
+            <h2>Preiskalkulator</h2>
+            <p>Wähle dein Team-Setup</p>
+        </div>
+
+        <div class="price-display">
+            <span id="totalPrice" class="amount">0,00 €</span>
+            <span class="period">/ Monat</span>
+        </div>
+
+        <div class="control-group">
+            <div class="label-row">
+                <label>Anzahl Nutzer</label>
+                <span id="userCountDisplay" class="badge">1 User</span>
+            </div>
+            <input type="range" id="userSlider" min="1" max="100" value="1">
+        </div>
+
+        <div class="control-group toggle-row">
+            <label for="billingToggle">Jährliche Zahlung <span class="discount">-20%</span></label>
+            <label class="switch">
+                <input type="checkbox" id="billingToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="control-group toggle-row">
+            <label for="supportToggle">24/7 Premium Support (+50€)</label>
+            <label class="switch">
+                <input type="checkbox" id="supportToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <button class="cta-button" onclick="alert('Hier würde der Checkout starten!')">Jetzt starten</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
