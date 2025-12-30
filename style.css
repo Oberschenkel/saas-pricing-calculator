@@ -1,3 +1,30 @@
+/* inter-regular - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/inter-v13-latin-regular.woff2') format('woff2'), /* Super modern */
+       url('fonts/inter-v13-latin-regular.woff') format('woff'); /* Fallback für ältere Browser */
+}
+
+/* inter-600 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('fonts/inter-v13-latin-600.woff2') format('woff2'),
+       url('fonts/inter-v13-latin-600.woff') format('woff');
+}
+
+/* inter-800 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: url('fonts/inter-v13-latin-800.woff2') format('woff2'),
+       url('fonts/inter-v13-latin-800.woff') format('woff');
+}
+
 :root {
     --primary: #6366f1; /* Indigo */
     --primary-hover: #4f46e5;
