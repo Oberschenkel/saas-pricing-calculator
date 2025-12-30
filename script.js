@@ -48,7 +48,7 @@ function calculatePrice() {
 
 // 4. Event Listener (Der "Observer")
 // Wir sagen dem Browser: "Wenn sich was ändert, rechne neu!"
-userSlider.addEventListener('input', calculatePrice);
+userSlider.addEventListener('change', calculatePrice);
 billingToggle.addEventListener('change', calculatePrice);
 supportToggle.addEventListener('change', calculatePrice);
 
